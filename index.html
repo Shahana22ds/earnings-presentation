@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Quarterly Earnings Report</title>
+
+    <!-- RevealJS Core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css"
+    />
+
+    <!-- Code Highlighting -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css"
+    />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        
+        <!-- Title Slide -->
+        <section>
+          <h1>Quarterly Earnings Report</h1>
+          <p>Email: <strong>22ds1000045@ds.study.iitm.ac.in</strong></p>
+          <aside class="notes">
+            Welcome stakeholders, this is the quarterly financial performance
+            overview.
+          </aside>
+        </section>
+
+        <!-- Markdown Slide -->
+        <section data-markdown>
+          <textarea data-template>
+          ## Revenue Highlights
+
+          - North America: **+15%**
+          - Europe: **+8%**
+          - Asia-Pacific: **+20%**
+          </textarea>
+        </section>
+
+        <!-- Animated Fragments -->
+        <section>
+          <h2>Key Metrics</h2>
+          <ul>
+            <li class="fragment">Revenue Growth: 12%</li>
+            <li class="fragment">Net Profit: $4.2M</li>
+            <li class="fragment fade-up">EPS: $2.31</li>
+          </ul>
+          <aside class="notes">
+            Reveal these numbers one by one to keep audience engagement.
+          </aside>
+        </section>
+
+        <!-- Code Sample -->
+        <section>
+          <h2>Data Processing Example</h2>
+          <pre><code class="python" data-line-numbers>
+import pandas as pd
+
+# Load financial data
+df = pd.read_csv("revenue.csv")
+
+# Show summary
+print(df.describe())
+          </code></pre>
+          <aside class="notes">
+            Demonstrating how we process raw revenue data using Python.
+          </aside>
+        </section>
+
+        <!-- Math Formula -->
+        <section>
+          <h2>Financial Formula</h2>
+          <p>Net Profit Margin (NPM):</p>
+          \[
+            \text{NPM} = \frac{\text{Net Income}}{\text{Revenue}} \times 100
+          \]
+          <aside class="notes">
+            This is a key profitability metric we track.
+          </aside>
+        </section>
+      </div>
+    </div>
+
+    <!-- RevealJS Core -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+
+    <!-- Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+
+    <!-- Init -->
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealMath, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
