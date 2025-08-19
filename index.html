@@ -1,89 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Quarterly Earnings Report</title>
-
-    <!-- RevealJS Core CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
-
-    <!-- Code Highlighting -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+    <meta charset="utf-8">
+    <title>Earnings Presentation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/theme/black.css">
   </head>
   <body>
     <div class="reveal">
       <div class="slides">
-
-        <!-- Slide 1: Email clearly shown -->
+        
+        <!-- Title Slide -->
         <section>
           <h1>Quarterly Earnings Report</h1>
-          <h3>Email: <span style="color:red;">22ds1000045@ds.study.iitm.ac.in</span></h3>
-          <aside class="notes">
-            This slide ensures my email is visible for the grader.
-          </aside>
+          <h3>Email: <span style="color:yellow;">22ds1000045@ds.study.iitm.ac.in</span></h3>
+          <p><em>Presented by Shahana</em></p>
         </section>
 
-        <!-- Markdown Slide -->
-        <section data-markdown>
-          <textarea data-template>
-          ## Revenue Highlights
-          - North America: **+15%**
-          - Europe: **+8%**
-          - Asia-Pacific: **+20%**
-          </textarea>
-        </section>
-
-        <!-- Animated Fragments -->
+        <!-- Agenda -->
         <section>
-          <h2>Key Metrics</h2>
+          <h2>Agenda</h2>
           <ul>
-            <li class="fragment">Revenue Growth: 12%</li>
-            <li class="fragment">Net Profit: $4.2M</li>
-            <li class="fragment fade-up">EPS: $2.31</li>
+            <li>Overview</li>
+            <li>Financial Highlights</li>
+            <li>Future Outlook</li>
           </ul>
-          <aside class="notes">These appear one by one to keep focus.</aside>
         </section>
 
-        <!-- Code Block -->
+        <!-- Financials -->
         <section>
-          <h2>Python Example</h2>
-          <pre><code class="python" data-line-numbers>
-import pandas as pd
-
-df = pd.read_csv("data/revenue.csv")
-print(df.describe())
-          </code></pre>
-          <aside class="notes">Shows simple financial data processing.</aside>
+          <h2>Financial Highlights</h2>
+          <p>Revenue growth of 12% YoY</p>
+          <p>Net profit margin at 18%</p>
         </section>
 
-        <!-- Math Formula -->
+        <!-- Outlook -->
         <section>
-          <h2>Financial Formula</h2>
-          \[
-            \text{NPM} = \frac{\text{Net Income}}{\text{Revenue}} \times 100
-          \]
-          <aside class="notes">Explains Net Profit Margin.</aside>
+          <h2>Future Outlook</h2>
+          <p>Expansion into new markets</p>
+          <p>Continued focus on innovation</p>
         </section>
 
       </div>
     </div>
 
-    <!-- RevealJS Core -->
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-
-    <!-- Plugins -->
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
-
-    <!-- Init -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4/dist/reveal.js"></script>
     <script>
-      Reveal.initialize({
-        hash: true,
-        plugins: [RevealMarkdown, RevealHighlight, RevealMath, RevealNotes],
-      });
+      Reveal.initialize();
     </script>
   </body>
 </html>
